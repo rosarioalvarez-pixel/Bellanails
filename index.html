@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bella Nails | Manicuría & Belleza</title>
 
-  <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -35,14 +34,24 @@
       color:#fff;
     }
 
+    .hero-content{
+      max-width:500px;
+      width:100%;
+    }
+
+    .logo{
+      width:120px;
+      margin-bottom:20px;
+    }
+
     .hero h1{
-      font-size:3rem;
+      font-size:2.5rem;
       font-weight:600;
     }
 
     .hero p{
       margin:10px 0 25px;
-      font-size:1.2rem;
+      font-size:1.1rem;
     }
 
     .buttons{
@@ -53,20 +62,23 @@
     }
 
     .btn{
-      padding:12px 25px;
+      padding:12px 22px;
       border-radius:30px;
       text-decoration:none;
       font-weight:500;
       transition:.3s;
+      display:flex;
+      align-items:center;
+      gap:10px;
     }
 
     .btn.primary{
-      background:#fff;
-      color:#c77dff;
+      background:#25D366;
+      color:#fff;
     }
 
     .btn.primary:hover{
-      background:#f2e6ff;
+      background:#1ebe5d;
     }
 
     .btn.outline{
@@ -78,7 +90,6 @@
       background:rgba(255,255,255,.2);
     }
 
-    /* SECTIONS */
     section{
       padding:60px 20px;
       text-align:center;
@@ -92,7 +103,7 @@
     /* SERVICES */
     .cards{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
       gap:20px;
       max-width:1000px;
       margin:auto;
@@ -108,7 +119,7 @@
     /* GALLERY */
     .gallery-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
       gap:15px;
       max-width:1000px;
       margin:auto;
@@ -125,12 +136,21 @@
       background:#f6f6f6;
     }
 
-    /* FOOTER */
     footer{
       padding:20px;
       text-align:center;
       font-size:.9rem;
       background:#eee;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:480px){
+      .hero h1{
+        font-size:2rem;
+      }
+      .hero p{
+        font-size:1rem;
+      }
     }
   </style>
 </head>
@@ -138,12 +158,29 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div>
+    <div class="hero-content">
+      <img src="https://iili.io/fsxSZaR.md.png" alt="Bella Nails Logo" class="logo">
+
       <h1>Bella Nails ✨</h1>
       <p>Manicuría & Tratamientos Capilares</p>
+
       <div class="buttons">
-        <a href="https://wa.me/549XXXXXXXXXX" class="btn primary">Reservar turno</a>
-        <a href="https://instagram.com/bella_nailss09" class="btn outline">Instagram</a>
+        <a href="https://wa.me/5491162673358?text=Hola%20Bella%20Nails%20💅✨%20Quiero%20consultar%20por%20un%20turno"
+           class="btn primary">
+
+          <!-- LOGO OFICIAL WHATSAPP SVG -->
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path fill="#fff"
+              d="M16.04 2.003c-7.72 0-14 6.28-14 14 0 2.72.78 5.25 2.12 7.4L2 30l6.77-2.1a13.93 13.93 0 0 0 7.27 2.04c7.72 0 14-6.28 14-14s-6.28-13.997-14-13.997zm0 25.5c-2.26 0-4.46-.67-6.33-1.93l-.45-.28-4.02 1.25 1.31-3.92-.29-.46a11.47 11.47 0 0 1-1.74-6.07c0-6.35 5.17-11.52 11.52-11.52s11.52 5.17 11.52 11.52-5.17 11.41-11.52 11.41zm6.31-8.62c-.35-.18-2.07-1.02-2.39-1.13-.32-.12-.55-.18-.78.18-.23.35-.9 1.13-1.1 1.36-.2.23-.4.26-.75.09-.35-.18-1.46-.54-2.78-1.71-1.03-.92-1.72-2.05-1.92-2.4-.2-.35-.02-.54.15-.71.16-.16.35-.41.52-.61.18-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.78-1.88-1.07-2.58-.28-.68-.56-.59-.78-.6h-.66c-.23 0-.61.09-.93.44-.32.35-1.22 1.2-1.22 2.93 0 1.73 1.25 3.4 1.42 3.63.18.23 2.47 3.77 6 5.28.84.36 1.5.57 2.01.73.84.27 1.61.23 2.21.14.67-.1 2.07-.85 2.36-1.67.29-.82.29-1.53.2-1.67-.09-.15-.32-.23-.67-.41z"/>
+          </svg>
+
+          WhatsApp
+        </a>
+
+        <a href="https://instagram.com/bella_nailss09" class="btn outline">
+          Instagram
+        </a>
       </div>
     </div>
   </section>
@@ -161,14 +198,14 @@
     </div>
   </section>
 
-  <!-- GALERÍA -->
+  <!-- TRABAJOS -->
   <section>
     <h2>Trabajos</h2>
     <div class="gallery-grid">
-      <img src="img/unas1.jpg" alt="Uñas 1">
-      <img src="img/unas2.jpg" alt="Uñas 2">
-      <img src="img/unas3.jpg" alt="Uñas 3">
-      <img src="img/unas4.jpg" alt="Uñas 4">
+      <img src="https://iili.io/fsxYKxe.md.jpg" alt="Uñas decoradas">
+      <img src="https://iili.io/fsxjUc7.md.jpg" alt="Diseño de uñas">
+      <img src="https://iili.io/fsxjSFS.md.jpg" alt="Esmaltado profesional">
+      <img src="https://iili.io/fsxjvP2.md.png" alt="Uñas esculpidas">
     </div>
   </section>
 
@@ -176,10 +213,8 @@
   <section class="contact">
     <h2>Reservá tu turno</h2>
     <p>Atención personalizada 💕</p>
-    <a href="https://wa.me/549XXXXXXXXXX" class="btn primary">WhatsApp</a>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     © 2026 Bella Nails · Todos los derechos reservados
   </footer>
