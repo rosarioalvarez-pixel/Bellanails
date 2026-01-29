@@ -1,180 +1,217 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inclemencia of Melodious</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Bella Nails | Manicuría & Belleza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#fff;
+      color:#333;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(135deg,#ffd6e8,#ff9acb);
+      color:#fff;
+    }
+
+    .hero-content{
+      max-width:500px;
+      width:100%;
+    }
+
+    .logo{
+      width:120px;
+      margin-bottom:20px;
+    }
+
+    .hero h1{
+      font-size:2.5rem;
+      font-weight:600;
+    }
+
+    .hero p{
+      margin:10px 0 25px;
+      font-size:1.1rem;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 22px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:500;
+      transition:.3s;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .btn.primary{
+      background:#25D366;
+      color:#fff;
+    }
+
+    .btn.primary:hover{
+      background:#1ebe5d;
+    }
+
+    .btn.outline{
+      border:2px solid #fff;
+      color:#fff;
+    }
+
+    .btn.outline:hover{
+      background:rgba(255,255,255,.2);
+    }
+
+    section{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:30px;
+      color:#ff7fb6;
+    }
+
+    /* SERVICES */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .card{
+      background:#fff0f6;
+      padding:20px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,.08);
+    }
+
+    /* GALLERY */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+      gap:15px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .gallery-grid img{
+      width:100%;
+      border-radius:15px;
+      object-fit:cover;
+    }
+
+    /* CONTACT */
+    .contact{
+      background:#fff0f6;
+    }
+
+    footer{
+      padding:20px;
+      text-align:center;
+      font-size:.9rem;
+      background:#ffe4ef;
+      color:#555;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:480px){
+      .hero h1{font-size:2rem;}
+      .hero p{font-size:1rem;}
+    }
+  </style>
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Inclemencia of Melodious</h1>
-    <p class="subtitle">Confesión · Día de los corazones sinceros</p>
-    <a href="#servicios" class="btn">Confesá tu amor</a>
-  </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://iili.io/fsxSZaR.md.png" alt="Bella Nails Logo" class="logo">
 
-  <section class="intro">
-    <p>
-      Para todo aquel que quiera confesar su amor durante la fiesta,
-      este es su momento.
-      <span>Romántico · Directo · Anónimo</span>
-    </p>
+      <h1>Bella Nails ✨</h1>
+      <p>Manicuría & Tratamientos Capilares</p>
+
+      <div class="buttons">
+        <a href="https://wa.me/5491162673358?text=Hola%20Bella%20Nails%20💅✨%20Quiero%20consultar%20por%20un%20turno"
+           class="btn primary">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#fff"
+              d="M16.04 2.003c-7.72 0-14 6.28-14 14 0 2.72.78 5.25 2.12 7.4L2 30l6.77-2.1a13.93 13.93 0 0 0 7.27 2.04c7.72 0 14-6.28 14-14s-6.28-13.997-14-13.997zm0 25.5c-2.26 0-4.46-.67-6.33-1.93l-.45-.28-4.02 1.25 1.31-3.92-.29-.46a11.47 11.47 0 0 1-1.74-6.07c0-6.35 5.17-11.52 11.52-11.52s11.52 5.17 11.52 11.52-5.17 11.41-11.52 11.41z"/>
+          </svg>
+          WhatsApp
+        </a>
+
+        <a href="https://instagram.com/bella_nailss09" class="btn outline">
+          Instagram
+        </a>
+      </div>
+    </div>
   </section>
 
-  <section id="servicios" class="services">
+  <!-- SERVICIOS -->
+  <section>
     <h2>Servicios</h2>
-
-    <div class="card">
-      <h3>💌 Confesión durante la fiesta</h3>
-      <p>Tu mensaje será entregado en el momento indicado.</p>
-    </div>
-
-    <div class="card">
-      <h3>🏹 Servicio de Cupido</h3>
-      <p>
-        Mandás el texto que quieras decirle a tu persona especial + 3 regalos.
-        Puede ser anónimo.
-      </p>
-      <p class="contact">
-        WhatsApp:
-        <a href="https://wa.me/56935668885" target="_blank">+56 9 3566 8885</a>
-      </p>
+    <div class="cards">
+      <div class="card">💅 Manicuría</div>
+      <div class="card">✨ Uñas esculpidas</div>
+      <div class="card">💖 Esmaltado semi</div>
+      <div class="card">💎 Kapping</div>
+      <div class="card">💆‍♀️ Tratamientos capilares</div>
+      <div class="card">💇‍♀️ Alisado · Botox · Keratina</div>
     </div>
   </section>
 
-  <section class="cta">
-    <h2>Hacé tu confesión</h2>
-    <p>Completá el formulario y dejá que Cupido haga lo suyo.</p>
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLScKuPJveoANcbChCfqj2-g5GMGcq3OkLrtIEL2DXWNFCO-YUryg/viewform"
-      target="_blank"
-      class="btn btn-dark"
-    >
-      Ir al formulario
-    </a>
+  <!-- TRABAJOS -->
+  <section>
+    <h2>Trabajos</h2>
+    <div class="gallery-grid">
+      <img src="https://iili.io/fsxYKxe.md.jpg" alt="Uñas decoradas">
+      <img src="https://iili.io/fsxjUc7.md.jpg" alt="Diseño de uñas">
+      <img src="https://iili.io/fsxjSFS.md.jpg" alt="Esmaltado profesional">
+      <img src="https://iili.io/fsz63CP.md.jpg" alt="Uñas Bella Nails">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact">
+    <h2>Reservá tu turno</h2>
+    <p>Atención personalizada 💕</p>
   </section>
 
   <footer>
-    <p>© 2026 Inclemencia of Melodious</p>
+    © 2026 Bella Nails · Todos los derechos reservados
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
-
-⸻
-
-
-/* styles.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #1a1a1a, #000);
-  color: #f2f2f2;
-}
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-}
-
-.subtitle {
-  margin-top: 1rem;
-  opacity: 0.8;
-}
-
-.btn {
-  margin-top: 2rem;
-  padding: 0.8rem 2rem;
-  border-radius: 30px;
-  background: #c9184a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.intro {
-  padding: 4rem 2rem;
-  text-align: center;
-  background: rgba(255,255,255,0.03);
-}
-
-.services {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.services h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 16px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-.contact a {
-  color: #ff758f;
-  text-decoration: none;
-}
-
-.cta {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.btn-dark {
-  background: #111;
-  border: 1px solid #c9184a;
-}
-
-footer {
-  padding: 2rem;
-  text-align: center;
-  opacity: 0.6;
-}
-
-
-⸻
-
-
-// script.js
-const elements = document.querySelectorAll('.card, .intro, .cta');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = 'translateY(0)';
-    }
-  });
-});
-
-elements.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = 'translateY(40px)';
-  el.style.transition = 'all 0.6s ease';
-  observer.observe(el);
-});
