@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bella Nails | Manicuría & Belleza</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#fff;
+      color:#333;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(135deg,#f6b1d8,#c77dff);
+      color:#fff;
+    }
+
+    .hero h1{
+      font-size:3rem;
+      font-weight:600;
+    }
+
+    .hero p{
+      margin:10px 0 25px;
+      font-size:1.2rem;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 25px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:500;
+      transition:.3s;
+    }
+
+    .btn.primary{
+      background:#fff;
+      color:#c77dff;
+    }
+
+    .btn.primary:hover{
+      background:#f2e6ff;
+    }
+
+    .btn.outline{
+      border:2px solid #fff;
+      color:#fff;
+    }
+
+    .btn.outline:hover{
+      background:rgba(255,255,255,.2);
+    }
+
+    /* SECTIONS */
+    section{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:30px;
+    }
+
+    /* SERVICES */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .card{
+      background:#f8f8f8;
+      padding:20px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,.08);
+    }
+
+    /* GALLERY */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      gap:15px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .gallery-grid img{
+      width:100%;
+      border-radius:15px;
+      object-fit:cover;
+    }
+
+    /* CONTACT */
+    .contact{
+      background:#f6f6f6;
+    }
+
+    /* FOOTER */
+    footer{
+      padding:20px;
+      text-align:center;
+      font-size:.9rem;
+      background:#eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Bella Nails ✨</h1>
+      <p>Manicuría & Tratamientos Capilares</p>
+      <div class="buttons">
+        <a href="https://wa.me/549XXXXXXXXXX" class="btn primary">Reservar turno</a>
+        <a href="https://instagram.com/bella_nailss09" class="btn outline">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section>
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">💅 Manicuría</div>
+      <div class="card">✨ Uñas esculpidas</div>
+      <div class="card">💖 Esmaltado semi</div>
+      <div class="card">💎 Kapping</div>
+      <div class="card">💆‍♀️ Tratamientos capilares</div>
+      <div class="card">💇‍♀️ Alisado · Botox · Keratina</div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section>
+    <h2>Trabajos</h2>
+    <div class="gallery-grid">
+      <img src="img/unas1.jpg" alt="Uñas 1">
+      <img src="img/unas2.jpg" alt="Uñas 2">
+      <img src="img/unas3.jpg" alt="Uñas 3">
+      <img src="img/unas4.jpg" alt="Uñas 4">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact">
+    <h2>Reservá tu turno</h2>
+    <p>Atención personalizada 💕</p>
+    <a href="https://wa.me/549XXXXXXXXXX" class="btn primary">WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Bella Nails · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
